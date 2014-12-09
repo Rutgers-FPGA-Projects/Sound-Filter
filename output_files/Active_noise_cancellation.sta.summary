@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -2.706
+TNS   : -5.292
+
+Type  : Slow 1200mV 85C Model Setup 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -2.188
+TNS   : -7.124
+
+Type  : Slow 1200mV 85C Model Setup 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 14.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -2.184
+TNS   : -6.552
+
+Type  : Slow 1200mV 85C Model Recovery 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -0.805
+TNS   : -4.690
+
+Type  : Slow 1200mV 85C Model Removal 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 9.675
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.891
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 18.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 26.838
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -2.503
+TNS   : -4.937
+
+Type  : Slow 1200mV 0C Model Setup 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -1.955
+TNS   : -6.273
+
+Type  : Slow 1200mV 0C Model Setup 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 14.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -1.965
+TNS   : -5.895
+
+Type  : Slow 1200mV 0C Model Recovery 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -0.251
+TNS   : -1.056
+
+Type  : Slow 1200mV 0C Model Removal 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -0.521
+TNS   : -2.773
+
+Type  : Slow 1200mV 0C Model Removal 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -1.487
+TNS   : -10.409
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 9.682
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.882
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 18.477
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 26.853
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -1.196
+TNS   : -2.328
+
+Type  : Fast 1200mV 0C Model Setup 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -0.367
+TNS   : -0.549
+
+Type  : Fast 1200mV 0C Model Setup 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 17.579
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : -1.012
+TNS   : -3.036
+
+Type  : Fast 1200mV 0C Model Recovery 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -0.530
+TNS   : -3.459
+
+Type  : Fast 1200mV 0C Model Removal 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~_Duplicate_1'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockBufferInstance|altpll_component|pll|clk[0]'
+Slack : 9.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_27'
+Slack : 18.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'audioPLLClockMap|altpll_component|pll|clk[0]'
+Slack : 26.946
+TNS   : 0.000
+
+------------------------------------------------------------

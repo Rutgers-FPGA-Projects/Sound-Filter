@@ -1,0 +1,485 @@
+Simulator report for Active_noise_cancellation_qsim
+Tue Dec 09 14:28:50 2014
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 300.0 ns     ;
+; Simulation Netlist Size     ; 176 nodes    ;
+; Simulation Coverage         ;       2.89 % ;
+; Total Number of Transitions ; 163          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Option                                                                                     ; Setting                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                 ;               ;
+; Vector input source                                                                        ; C:/Users/pk345/Desktop/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                  ; On            ;
+; Check outputs                                                                              ; Off                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                           ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                           ; Transport     ;
++--------------------------------------------------------------------------------------------+-------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       2.89 % ;
+; Total nodes checked                                 ; 176          ;
+; Total output ports checked                          ; 173          ;
+; Total output ports with complete 1/0-value coverage ; 5            ;
+; Total output ports with no 1/0-value coverage       ; 140          ;
+; Total output ports with no 1-value coverage         ; 149          ;
+; Total output ports with no 0-value coverage         ; 159          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                          ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; Node Name                                                               ; Output Port Name                                                        ; Output Port Type ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+; |Active_noise_cancellation|CLOCK_50                                     ; |Active_noise_cancellation|CLOCK_50                                     ; out              ;
+; |Active_noise_cancellation|CLOCK_27                                     ; |Active_noise_cancellation|CLOCK_27                                     ; out              ;
+; |Active_noise_cancellation|AUD_ADCDAT                                   ; |Active_noise_cancellation|AUD_ADCDAT                                   ; out              ;
+; |Active_noise_cancellation|AUD_DACDAT                                   ; |Active_noise_cancellation|AUD_DACDAT                                   ; pin_out          ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|dacData ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|dacData ; out              ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                        ; Output Port Name                                                                                                 ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; |Active_noise_cancellation|KEY[3]                                                                                ; |Active_noise_cancellation|KEY[3]                                                                                ; out              ;
+; |Active_noise_cancellation|AUD_ADCLRCK                                                                           ; |Active_noise_cancellation|AUD_ADCLRCK                                                                           ; pin_out          ;
+; |Active_noise_cancellation|AUD_DACLRCK                                                                           ; |Active_noise_cancellation|AUD_DACLRCK                                                                           ; pin_out          ;
+; |Active_noise_cancellation|AUD_XCK                                                                               ; |Active_noise_cancellation|AUD_XCK                                                                               ; pin_out          ;
+; |Active_noise_cancellation|AUD_BCLK                                                                              ; |Active_noise_cancellation|AUD_BCLK                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDG[0]                                                                               ; |Active_noise_cancellation|LEDG[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[1]                                                                               ; |Active_noise_cancellation|LEDG[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[2]                                                                               ; |Active_noise_cancellation|LEDG[2]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[3]                                                                               ; |Active_noise_cancellation|LEDG[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[4]                                                                               ; |Active_noise_cancellation|LEDG[4]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[5]                                                                               ; |Active_noise_cancellation|LEDG[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[6]                                                                               ; |Active_noise_cancellation|LEDG[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[7]                                                                               ; |Active_noise_cancellation|LEDG[7]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[8]                                                                               ; |Active_noise_cancellation|LEDG[8]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[0]                                                                               ; |Active_noise_cancellation|HEX0[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[1]                                                                               ; |Active_noise_cancellation|HEX0[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[2]                                                                               ; |Active_noise_cancellation|HEX0[2]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[3]                                                                               ; |Active_noise_cancellation|HEX0[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[4]                                                                               ; |Active_noise_cancellation|HEX0[4]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[5]                                                                               ; |Active_noise_cancellation|HEX0[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[6]                                                                               ; |Active_noise_cancellation|HEX0[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[0]                                                                               ; |Active_noise_cancellation|HEX1[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[1]                                                                               ; |Active_noise_cancellation|HEX1[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[2]                                                                               ; |Active_noise_cancellation|HEX1[2]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[3]                                                                               ; |Active_noise_cancellation|HEX1[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[4]                                                                               ; |Active_noise_cancellation|HEX1[4]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[5]                                                                               ; |Active_noise_cancellation|HEX1[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[6]                                                                               ; |Active_noise_cancellation|HEX1[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~0     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~0     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~1     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~1     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~2     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~2     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~3     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~3     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|output      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|output      ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[3]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[3]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[2]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[2]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[1]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[1]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[0]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[0]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~0             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~0             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~1             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~1             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~2             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~2             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~0            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~0            ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[2]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[2]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[1]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[1]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[0]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[0]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output              ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|output                                                   ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~0                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~0                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~1                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~1                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~2                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~2                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~3                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~3                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~4                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~4                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~5                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~5                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~6                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~6                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~7                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~7                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~8                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~8                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~9                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~9                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~10                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~10                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~11                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~11                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~12                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~12                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~13                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~13                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~14                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~14                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~15                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~15                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~16                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~16                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~17                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~17                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~18                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~18                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~19                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~19                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~20                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~20                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output~0                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|output~0                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output~1                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|output~1                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[20]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[20]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[19]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[19]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[18]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[18]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[17]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[17]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[16]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[16]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[15]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[15]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[14]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[14]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[13]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[13]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[12]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[12]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[11]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[11]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[10]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[10]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[9]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[9]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[8]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[8]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[7]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[7]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[6]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[6]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[5]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[5]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[4]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[4]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[3]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[3]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[2]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[2]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[1]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[1]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[0]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[0]                                                 ; regout           ;
+; |Active_noise_cancellation|audioPLLClock:audioPLLClockMap|altpll:altpll_component|cycloneii_pll:pll              ; |Active_noise_cancellation|audioPLLClock:audioPLLClockMap|altpll:altpll_component|cycloneii_pll:pll              ; clk              ;
+; |Active_noise_cancellation|clockBuffer:clockBufferInstance|altpll:altpll_component|cycloneii_pll:pll             ; |Active_noise_cancellation|clockBuffer:clockBufferInstance|altpll:altpll_component|cycloneii_pll:pll             ; clk              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~0 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~0 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~1 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~1 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~2 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~2 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~3 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~3 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~4 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~4 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~5 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~5 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~0         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~0         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~1         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~1         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~2         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~2         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~0      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~0      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~1      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~1      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~2      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~2      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~3      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~3      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~4      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~4      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~0              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~0              ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~1              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~1              ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~2              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~2              ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~0                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~0                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~1                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~1                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~2                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~2                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~3                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~3                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~4                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~4                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~5                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~5                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~6                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~6                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~7                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~7                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~8                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~8                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~9                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~9                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~10                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~10                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~11                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~11                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~12                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~12                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~13                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~13                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~14                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~14                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~15                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~15                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~16                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~16                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~17                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~17                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~18                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~18                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~19                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~19                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~20                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~20                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~21                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~21                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~22                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~22                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~23                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~23                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~24                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~24                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~25                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~25                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~26                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~26                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~27                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~27                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~28                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~28                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~29                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~29                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~30                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~30                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~31                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~31                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~32                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~32                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~33                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~33                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~34                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~34                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~35                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~35                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~36                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~36                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~37                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~37                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~38                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~38                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Equal0~0                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|Equal0~0                                                 ; out0             ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                        ; Output Port Name                                                                                                 ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; |Active_noise_cancellation|KEY[3]                                                                                ; |Active_noise_cancellation|KEY[3]                                                                                ; out              ;
+; |Active_noise_cancellation|AUD_ADCLRCK                                                                           ; |Active_noise_cancellation|AUD_ADCLRCK                                                                           ; pin_out          ;
+; |Active_noise_cancellation|AUD_DACLRCK                                                                           ; |Active_noise_cancellation|AUD_DACLRCK                                                                           ; pin_out          ;
+; |Active_noise_cancellation|AUD_XCK                                                                               ; |Active_noise_cancellation|AUD_XCK                                                                               ; pin_out          ;
+; |Active_noise_cancellation|AUD_BCLK                                                                              ; |Active_noise_cancellation|AUD_BCLK                                                                              ; pin_out          ;
+; |Active_noise_cancellation|SW[0]                                                                                 ; |Active_noise_cancellation|SW[0]                                                                                 ; out              ;
+; |Active_noise_cancellation|LEDR[0]                                                                               ; |Active_noise_cancellation|LEDR[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[1]                                                                               ; |Active_noise_cancellation|LEDR[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[2]                                                                               ; |Active_noise_cancellation|LEDR[2]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[3]                                                                               ; |Active_noise_cancellation|LEDR[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[4]                                                                               ; |Active_noise_cancellation|LEDR[4]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[5]                                                                               ; |Active_noise_cancellation|LEDR[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[6]                                                                               ; |Active_noise_cancellation|LEDR[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[7]                                                                               ; |Active_noise_cancellation|LEDR[7]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[8]                                                                               ; |Active_noise_cancellation|LEDR[8]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[9]                                                                               ; |Active_noise_cancellation|LEDR[9]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDR[10]                                                                              ; |Active_noise_cancellation|LEDR[10]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[11]                                                                              ; |Active_noise_cancellation|LEDR[11]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[12]                                                                              ; |Active_noise_cancellation|LEDR[12]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[13]                                                                              ; |Active_noise_cancellation|LEDR[13]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[14]                                                                              ; |Active_noise_cancellation|LEDR[14]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[15]                                                                              ; |Active_noise_cancellation|LEDR[15]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[16]                                                                              ; |Active_noise_cancellation|LEDR[16]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDR[17]                                                                              ; |Active_noise_cancellation|LEDR[17]                                                                              ; pin_out          ;
+; |Active_noise_cancellation|LEDG[0]                                                                               ; |Active_noise_cancellation|LEDG[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[1]                                                                               ; |Active_noise_cancellation|LEDG[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[2]                                                                               ; |Active_noise_cancellation|LEDG[2]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[3]                                                                               ; |Active_noise_cancellation|LEDG[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[4]                                                                               ; |Active_noise_cancellation|LEDG[4]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[5]                                                                               ; |Active_noise_cancellation|LEDG[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[6]                                                                               ; |Active_noise_cancellation|LEDG[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[7]                                                                               ; |Active_noise_cancellation|LEDG[7]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|LEDG[8]                                                                               ; |Active_noise_cancellation|LEDG[8]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[0]                                                                               ; |Active_noise_cancellation|HEX0[0]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[1]                                                                               ; |Active_noise_cancellation|HEX0[1]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[3]                                                                               ; |Active_noise_cancellation|HEX0[3]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX0[5]                                                                               ; |Active_noise_cancellation|HEX0[5]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|HEX1[6]                                                                               ; |Active_noise_cancellation|HEX1[6]                                                                               ; pin_out          ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~0     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~0     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~1     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~1     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~2     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~2     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~3     ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count~3     ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|output      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|output      ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[3]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[3]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[2]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[2]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[1]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[1]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[0]    ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|count[0]    ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~0             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~0             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~1             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~1             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~2             ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count~2             ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~0            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output~0            ; out              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[2]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[2]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[1]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[1]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[0]            ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|count[0]            ; regout           ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|output              ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|output                                                   ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~0                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~0                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~1                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~1                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~2                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~2                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~3                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~3                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~4                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~4                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~5                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~5                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~6                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~6                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~7                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~7                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~8                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~8                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~9                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~9                                                  ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~10                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~10                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~11                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~11                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~12                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~12                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~13                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~13                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~14                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~14                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~15                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~15                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~16                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~16                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~17                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~17                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~18                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~18                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~19                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~19                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count~20                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count~20                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output~0                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|output~0                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|output~1                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|output~1                                                 ; out              ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[20]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[20]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[19]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[19]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[18]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[18]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[17]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[17]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[16]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[16]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[15]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[15]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[14]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[14]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[13]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[13]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[12]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[12]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[11]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[11]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[10]                                                ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[10]                                                ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[9]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[9]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[8]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[8]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[7]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[7]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[6]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[6]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[5]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[5]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[4]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[4]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[3]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[3]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[2]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[2]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[1]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[1]                                                 ; regout           ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|count[0]                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|count[0]                                                 ; regout           ;
+; |Active_noise_cancellation|audioPLLClock:audioPLLClockMap|altpll:altpll_component|cycloneii_pll:pll              ; |Active_noise_cancellation|audioPLLClock:audioPLLClockMap|altpll:altpll_component|cycloneii_pll:pll              ; clk              ;
+; |Active_noise_cancellation|clockBuffer:clockBufferInstance|altpll:altpll_component|cycloneii_pll:pll             ; |Active_noise_cancellation|clockBuffer:clockBufferInstance|altpll:altpll_component|cycloneii_pll:pll             ; clk              ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~0 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~0 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~1 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~1 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~2 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~2 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~3 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~3 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~4 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~4 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~5 ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|LessThan0~5 ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~0         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~0         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~1         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~1         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~2         ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|LessThan0~2         ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~0      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~0      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~1      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~1      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~2      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~2      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~3      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~3      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~4      ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|LRchannelCounter:LRchannelCounterMap|Add0~4      ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~0              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~0              ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~1              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~1              ; out0             ;
+; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~2              ; |Active_noise_cancellation|AdcDacController:AdcDacControllerMap|bclk_counter:bclk_counterMap|Add0~2              ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~0                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~0                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~1                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~1                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~2                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~2                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~3                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~3                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~4                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~4                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~5                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~5                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~6                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~6                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~7                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~7                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~8                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~8                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~9                                                   ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~9                                                   ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~10                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~10                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~11                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~11                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~12                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~12                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~13                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~13                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~14                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~14                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~15                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~15                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~16                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~16                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~17                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~17                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~18                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~18                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~19                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~19                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~20                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~20                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~21                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~21                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~22                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~22                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~23                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~23                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~24                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~24                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~25                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~25                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~26                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~26                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~27                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~27                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~28                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~28                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~29                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~29                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~30                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~30                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~31                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~31                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~32                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~32                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~33                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~33                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~34                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~34                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~35                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~35                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~36                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~36                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~37                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~37                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~38                                                  ; |Active_noise_cancellation|delayCounter:delayCounterMap|Add0~38                                                  ; out0             ;
+; |Active_noise_cancellation|delayCounter:delayCounterMap|Equal0~0                                                 ; |Active_noise_cancellation|delayCounter:delayCounterMap|Equal0~0                                                 ; out0             ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Dec 09 14:28:46 2014
+Info: Command: quartus_sim --simulation_results_format=VWF Active_noise_cancellation -c Active_noise_cancellation_qsim
+Info (324025): Using vector source file "C:/Users/pk345/Desktop/Waveform.vwf"
+Warning (328012): Can't find signal in vector source file for input pin "|Active_noise_cancellation|KEY[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|Active_noise_cancellation|KEY[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|Active_noise_cancellation|KEY[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|Active_noise_cancellation|KEY[3]"
+Info (311000): System task:  Note : CycloneII PLL is enabled
+Info (311000): System task: Time: 0  Instance: audioPLLClockMap|altpll_component|pll
+Info (311000): System task:  Note : CycloneII PLL is enabled
+Info (311000): System task: Time: 0  Instance: clockBufferInstance|altpll_component|pll
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       2.89 %
+Info (328052): Number of transitions in simulation is 163
+Info (324045): Vector file Active_noise_cancellation_qsim.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 318 megabytes
+    Info: Processing ended: Tue Dec 09 14:28:50 2014
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+
